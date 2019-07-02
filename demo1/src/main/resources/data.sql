@@ -1,0 +1,2 @@
+insert into user(id,ACCOUNT_ID, name, TOKEN, GMT_CREATE, GMT_MODIFIED) values(1,'1', '1', '1', 1, 1);
+insert into user(id,ACCOUNT_ID, name, TOKEN, GMT_CREATE, GMT_MODIFIED) values(2,'2', '2', '2', 2, 2);
