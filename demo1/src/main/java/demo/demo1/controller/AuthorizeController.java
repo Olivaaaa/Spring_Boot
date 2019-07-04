@@ -49,7 +49,8 @@ public class AuthorizeController {
             User user = new User();
             String token = UUID.randomUUID().toString();
             user.setToken(token);
-            user.setName(githubUser.getName());
+//            user.setName(githubUser.getName());
+            user.setName("小小");
             user.setAccountId(String.valueOf(githubUser.getId()));
             user.setGmtCreate(System.currentTimeMillis());
             user.setGmtModified(user.getGmtCreate());
@@ -58,7 +59,7 @@ public class AuthorizeController {
             response.addCookie(new Cookie("token", token));
             //登录成功，则写入cookie和session
 
-            request.getSession().setAttribute("githubUser", githubUser);
+//            request.getSession().setAttribute("githubUser", githubUser);
             return "redirect:/";
         }
         else {
